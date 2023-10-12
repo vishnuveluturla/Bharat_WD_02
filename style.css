@@ -1,0 +1,103 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5; 
+    color: #333; 
+    font-family: Arial, sans-serif;
+}
+
+.converter-container {
+    text-align: center;
+    background-color: #3498db; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+
+.converter-container h2 {
+    margin-bottom: 15px;
+    color: #fff; 
+}
+
+.converter-container label {
+    font-weight: bold;
+    color: #fff; 
+}
+
+.temperature-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #2980b9; 
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff; 
+    color: #333; 
+    text-align: center; 
+}
+
+.converter-container select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #2980b9;  
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;  
+    color: #333;  
+}
+
+.converter-container button {
+    background-color: #e74c3c; 
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.converter-container button:hover {
+    background-color: #c0392b;  
+}
+
+.result {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 20px;
+    color: black;  
+}
+
+
+.copyright {
+    position: absolute;
+    bottom: 10px;  
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 14px;
+    color: black; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
